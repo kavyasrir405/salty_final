@@ -1,0 +1,32 @@
+.issue-card-horizontal-h {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 0;
+  }
+ 
+  .details-h {
+    background-color:#dfe2e3;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    padding: 1rem; /* Add padding for better spacing */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+  }
+
+  .description-h{
+    flex:3;
+  }
+ 
+  span {
+    white-space: nowrap; /* Prevent wrapping of text */
+   
+    text-overflow: ellipsis; /* Display ellipsis (...) for overflowed text */
+    flex: 1; /* Each span takes up equal space */
+    margin-right: 0.5rem; /* Add margin between spans */
+  }
+ 
+  span:last-child {
+    margin-right: 0; /* Remove margin from the last span */
+  }
+ 

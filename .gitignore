@@ -1,0 +1,16 @@
+node_modules/
+
+# Build artifacts (adjust based on your build tool)
+build/
+dist/
+out/
+
+# Backend
+venv/
+
+# Environment specific configurations
+.env
+
+# IDE specific files (adjust based on your IDE)
+.idea/
+.vscode/

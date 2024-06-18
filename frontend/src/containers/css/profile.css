@@ -1,0 +1,38 @@
+/* Profile.css */
+.profile-container {
+  max-width: 500px;
+  margin: 0 auto; /* Center the container horizontally */
+  margin-top: 20vh; /* Center vertically */
+  background-color: aliceblue;
+  padding: 20px; /* Add padding for space around the container */
+  border: 2px solid #ccc; /* Add a border */
+  border-radius: 10px; /* Add border radius for rounded corners */
+}
+
+.profile-field {
+  margin-bottom: 20px;
+}
+
+.profile-field label {
+  display: flex; /* Display the label as a block element */
+  margin-bottom: 5px; /* Add space between label and input */
+  font-weight: bold;
+}
+
+.profile-field .editable {
+  cursor: pointer;
+  border-bottom: 1px dashed #999;
+}
+
+.profile-field input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.profile-field input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+

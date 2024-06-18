@@ -1,0 +1,92 @@
+.container {
+    position: relative;
+    height: 95vh;
+    width: 100vw;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3.5rem;
+    color: black;
+    text-align: center;
+    flex-direction: column; /* Center elements vertically */
+    overflow: hidden; /* To ensure the pseudo-element doesn't overflow */
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(./salt.jpeg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px); /* Adjust the blur intensity */
+    z-index: -1; /* Ensure the blurred background is behind the content */
+}
+
+.salty-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center the SALTY text horizontally */
+}
+
+.salty-header h1 {
+    font-size: 6rem;
+    font-weight: normal;
+    letter-spacing: 1rem;
+    margin: 0;
+    animation: slideIn 1s ease forwards;
+}
+
+.content {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    justify-content: center; /* Center elements vertically */
+}
+
+.welcome-header {
+    padding: 2rem;
+    font-size: 2rem; /* Smaller font size */
+    font-weight: lighter;
+    letter-spacing: 2rem; /* Add spacing between characters */
+    animation: slideIn 1s ease forwards;
+}
+
+.button-div {
+    display: flex;
+    column-gap: 2rem;
+    margin-top: 2rem; /* Add margin to space the button from the text */
+}
+
+.continue-to-login {
+    height: 3rem;
+    width: 10rem;
+    border-radius: 4px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    background-color: #bd055e;
+    color: white;
+}
+
+.continue-to-login:hover{
+    background-color: #a2185b;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
